@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">QuietTime</string>
+    <string name="enter">Event Name</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="addEvent">Add New Event</string>
+    <string name="prev">&lt;</string>
+    <string name="next">&gt;</string>
+    <string name="add">+</string>
+    <string-array name="ringer_array">
+        <item>Silent</item>
+        <item>Vibrate</item>
+        <item>Normal</item>
+    </string-array>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="removeEvent">Delete Event</string>
+    <string name="editEvent">Save Changes</string>
+    <string name="check_all">Daily</string>
+    <string name="event_icon_string">Events exist?</string>
+    <string name="cancel">Cancel</string>
+</resources>

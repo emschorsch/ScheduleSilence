@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" >
+	
+	<LinearLayout 
+	    android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" >
+		
+		<TableLayout  
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+	   		android:id="@+id/tableLayout1"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="0dp" 
+	    	android:layout_weight = "1" >
+	
+	        <TableRow
+	            android:id="@+id/TopRow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:padding="1dip" >
+	 
+		        <ImageView             
+		            android:id="@+id/prev"
+		            android:src="@drawable/ic_menu_back"
+		            android:contentDescription="@string/prev"
+		            android:layout_weight = ".1"
+		            android:tag = "previous"
+		            android:background="@color/black"
+		            android:onClick="prevClick" />
+		        <TextView
+					android:id="@+id/currentMonth"
+					android:gravity="center"
+					android:layout_weight="0.8"
+					style="@style/Header"		            
+					android:layout_height="match_parent"		
+		            android:layout_width="wrap_content"
+					 />
+		        <ImageView
+		            android:id="@+id/next"
+		            android:src="@drawable/ic_menu_forward"
+		            android:contentDescription="@string/next"
+		            android:layout_weight = ".1"
+		            android:tag = "next"
+		            android:background="@color/black" 
+		            android:onClick="nextClick"/>
+		    </TableRow>
+		        
+		</TableLayout>
+		
+		<RelativeLayout
+	            android:id="@+id/WeekRow"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@color/cyan"
+	            android:padding="1dip" >
+
+		        <TextView android:id="@+id/sun"
+		            android:text="@string/sun"
+					style="@style/Header2"
+					android:layout_alignParentLeft="true" />		        
+		        <TextView android:id="@+id/mon"
+		            android:text="@string/mon"
+		            android:layout_toRightOf="@id/sun"
+					style="@style/Header2" />
+		        <TextView android:id="@+id/tue"
+		            android:text="@string/tue"
+		            android:layout_toRightOf="@id/mon"
+					style="@style/Header2" />
+		        <TextView android:id="@+id/wed"
+		            android:text="@string/wed"
+		            android:layout_toRightOf="@id/tue"
+					style="@style/Header2" />
+		        <TextView android:id="@+id/thu"
+		            android:text="@string/thu"
+		            android:layout_toRightOf="@id/wed"
+					style="@style/Header2" />
+		        <TextView android:id="@+id/fri"
+		            android:text="@string/fri"
+		            android:layout_toRightOf="@id/thu"
+					style="@style/Header2" />
+		        <TextView android:id="@+id/sat"
+		            android:text="@string/sat"
+		            android:layout_toRightOf="@id/fri"
+					style="@style/Header2" />
+	         
+	    </RelativeLayout>
+		
+		<GridView
+			android:id="@+id/calendar"
+			android:numColumns="7"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:verticalSpacing="2dp"
+			android:horizontalSpacing="2dp"
+			android:background="@drawable/calendar_background" />
+		
+		<TableLayout  
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+	   		android:id="@+id/tableLayout2"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="0dp" 
+	    	android:layout_weight = "1" >
+	
+	        <TableRow
+	            android:id="@+id/bottomRow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:padding="1dip" >
+	 
+		         <Button             
+		            android:id="@+id/add"
+		            android:layout_weight = ".1"
+		            android:tag = "add"
+		            android:background="@color/dkred"
+		            android:text="@string/add"
+		            android:textStyle="bold"
+		            android:onClick="addClick" />
+		         <TextView
+					android:id="@+id/Events"
+					android:gravity="center"
+					android:layout_weight="0.9"
+					android:textColor="@color/white"
+		            android:background="@color/dkred"			
+		            android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+	           
+	    	</TableRow>
+		</TableLayout>
+	</LinearLayout>
+	<LinearLayout
+    	android:layout_height="wrap_content"
+    	android:layout_width = "fill_parent" >
+       <ListView 
+           android:id="@+id/list_view" 
+           android:layout_width="match_parent" 
+           android:layout_height="match_parent"
+           android:clickable="true" />
+    </LinearLayout>
+       
+</LinearLayout>

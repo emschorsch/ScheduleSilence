@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="62dp"
+	android:layout_height="match_parent"
+	android:clickable="false">
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/curr_grid"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:focusable="true"
+	android:background="@drawable/curr_month_selector" >
+
+	<Button
+		android:id="@+id/curr_month"
+		android:layout_centerHorizontal="true"
+		android:textColor="@color/black"
+		android:textSize="15sp"		
+		android:layout_width="20dp"
+		android:layout_height="30dp"
+		android:background="@android:color/transparent" />
+	
+	<!-- ic_delet, stat_notify_alarm -->
+	<ImageView 
+	    android:id="@+id/event_icon"
+	    android:src="@drawable/btn_code_lock_touched"
+	    android:background="@android:color/transparent"
+	    android:layout_width="9dp"
+	    android:layout_height="9dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:visibility="invisible"
+	    android:contentDescription="@string/event_icon_string"	/>
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cs71/!svn/ver/3318/submission/hmost1/project/Calendar/src/com/examples
+END
+EditEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cs71/!svn/ver/3308/submission/hmost1/project/Calendar/src/com/examples/EditEvent.java
+END
+AudioChangeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cs71/!svn/ver/3295/submission/hmost1/project/Calendar/src/com/examples/AudioChangeService.java
+END
+CalendarDBHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cs71/!svn/ver/3318/submission/hmost1/project/Calendar/src/com/examples/CalendarDBHandler.java
+END
+CalendarPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cs71/!svn/ver/3307/submission/hmost1/project/Calendar/src/com/examples/CalendarPage.java
+END
+TimePickerFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cs71/!svn/ver/3280/submission/hmost1/project/Calendar/src/com/examples/TimePickerFragment.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cs71/!svn/ver/3307/submission/hmost1/project/Calendar/src/com/examples/Event.java
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cs71/!svn/ver/3308/submission/hmost1/project/Calendar/src/com/examples/Main.java
+END
+AtBootReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cs71/!svn/ver/2612/submission/hmost1/project/Calendar/src/com/examples/AtBootReceiver.java
+END

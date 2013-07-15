@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 
+    <item android:state_pressed="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+            <stroke android:width="2dp" android:color="@color/green" />
+            <solid android:color="@color/dgray"/>
+            <corners android:radius="15dp" /> 
+        </shape>   
+    </item> 
+    android:drawable="@android:drawable/button_onoff_indicator_on" -->
+    <item android:state_selected="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+            <solid android:color="@color/lsalmon"/>
+            <corners android:radius="3dp" /> 
+        </shape>   
+    </item>
+    <item >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+            <solid android:color="#909090"/>
+            <corners android:radius="2dp" />
+        </shape>   
+    </item>
+
+</selector>

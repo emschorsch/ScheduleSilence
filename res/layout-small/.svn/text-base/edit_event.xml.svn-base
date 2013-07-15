@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dip"
+    android:orientation="vertical">
+    
+    <EditText
+        android:id="@+id/EventName"
+        android:hint="@string/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:gravity = "center"
+        android:singleLine="true" />
+    
+    <Spinner
+    	android:id="@+id/ringer_spinner"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/EventName" />
+    
+    <CheckBox android:id="@+id/checkbox_monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ringer_spinner"
+        android:text="@string/monday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <Button 
+    	android:id="@+id/startTime"
+    	android:layout_width="100dp" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/ringer_spinner"
+    	android:layout_alignParentRight="true"
+    	android:text="@string/start_time" 
+    	android:onClick="showTimePickerDialog" />
+    
+    <TextView
+        android:id="@+id/StartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTime"
+        android:singleLine="true" />
+    
+    <Button 
+    	android:id="@+id/endTime"
+    	android:layout_width="100dp" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/StartText"
+    	android:layout_alignParentRight="true"
+    	android:text="@string/end_time" 
+    	android:onClick="showEndTimePickerDialog" />
+    
+    <Button 
+    	android:id="@+id/checkAll"
+    	android:layout_width="100dp" 
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/endTime"
+    	android:layout_alignParentRight="true"
+    	android:text="@string/check_all" 
+    	android:onClick="checkAllDays" />
+    
+    <TextView
+        android:id="@+id/EndText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endTime"
+        android:singleLine="true" />
+    
+    <CheckBox android:id="@+id/checkbox_tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_monday"
+        android:text="@string/tuesday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <CheckBox android:id="@+id/checkbox_wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_tuesday"
+        android:text="@string/wednesday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <CheckBox android:id="@+id/checkbox_thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_wednesday"
+        android:text="@string/thursday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <CheckBox android:id="@+id/checkbox_friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_thursday"
+        android:text="@string/friday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <CheckBox android:id="@+id/checkbox_saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_friday"
+        android:text="@string/saturday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <CheckBox android:id="@+id/checkbox_sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_saturday"
+        android:text="@string/sunday"
+        android:onClick="onCheckboxClicked"/>
+    
+    <Button 
+    	android:id="@+id/cancel"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignParentBottom="true"
+    	android:text="@string/cancel" 
+    	android:onClick="cancelEvent" />
+    
+    <Button 
+    	android:id="@+id/addEvent"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:layout_above="@id/cancel"
+    	android:text="@string/editEvent" 
+    	android:onClick="addEvent" />
+    
+
+    
+</RelativeLayout>
